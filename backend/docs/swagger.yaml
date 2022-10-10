@@ -1,0 +1,329 @@
+basePath: /api
+info:
+  contact: {}
+paths:
+  /commitHeatmaps/{projectId}:
+    get:
+      consumes:
+      - application/json
+      description: placeholder
+      parameters:
+      - description: Project Id
+        in: path
+        name: projectId
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Get number of commits per area and developer in plot format
+      tags:
+      - Heatmaps
+  /commitHourBarcharts/{projectId}:
+    get:
+      consumes:
+      - application/json
+      description: placeholder
+      parameters:
+      - description: Project Id
+        in: path
+        name: projectId
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Get changed files per commit per developer statistics in boxplot format
+      tags:
+      - Barcharts
+  /commitHourPersonBarcharts/{personId}:
+    get:
+      consumes:
+      - application/json
+      description: placeholder
+      parameters:
+      - description: Person Id
+        in: path
+        name: personId
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Get changed files per commit per developer statistics in boxplot format
+      tags:
+      - Barcharts
+  /commitMessageLengthAreaBoxplots/{projectId}:
+    get:
+      consumes:
+      - application/json
+      description: placeholder
+      parameters:
+      - description: Project Id
+        in: path
+        name: projectId
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Get commit message lengths per area statistics in boxplot format
+      tags:
+      - Boxplots
+  /commitMessageLengthDeveloperBoxplots/{projectId}:
+    get:
+      consumes:
+      - application/json
+      description: placeholder
+      parameters:
+      - description: Project Id
+        in: path
+        name: projectId
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Get commit message lengths per developer statistics in boxplot format
+      tags:
+      - Boxplots
+  /commitMessageLengthHeatmaps/{projectId}:
+    get:
+      consumes:
+      - application/json
+      description: placeholder
+      parameters:
+      - description: Project Id
+        in: path
+        name: projectId
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Get commit message lengths  per area and developer in plot format
+      tags:
+      - Heatmaps
+  /commitWeekdayBarcharts/{projectId}:
+    get:
+      consumes:
+      - application/json
+      description: placeholder
+      parameters:
+      - description: Project Id
+        in: path
+        name: projectId
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Get changed files per commit per developer statistics in boxplot format
+      tags:
+      - Barcharts
+  /commitWeekdayPersonBarcharts/{personId}:
+    get:
+      consumes:
+      - application/json
+      description: placeholder
+      parameters:
+      - description: Person Id
+        in: path
+        name: personId
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Get changed files per commit per developer statistics in boxplot format
+      tags:
+      - Barcharts
+  /fileChangesAreaBarcharts/{projectId}:
+    get:
+      consumes:
+      - application/json
+      description: placeholder
+      parameters:
+      - description: Project Id
+        in: path
+        name: projectId
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Get changed files per commit per area statistics in boxplot format
+      tags:
+      - Barcharts
+  /fileChangesDeveloperBarcharts/{projectId}:
+    get:
+      consumes:
+      - application/json
+      description: placeholder
+      parameters:
+      - description: Project Id
+        in: path
+        name: projectId
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Get changed files per commit per developer statistics in boxplot format
+      tags:
+      - Barcharts
+  /fileCountAreaPiecharts/{projectId}:
+    get:
+      consumes:
+      - application/json
+      description: placeholder
+      parameters:
+      - description: Project Id
+        in: path
+        name: projectId
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Get changed files per commit per area statistics in boxplot format
+      tags:
+      - Piecharts
+  /generalStatistics/{projectId}:
+    get:
+      consumes:
+      - application/json
+      description: placeholder
+      parameters:
+      - description: Project Id
+        in: path
+        name: projectId
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Get the general statistics for one project
+      tags:
+      - Project
+  /persons:
+    get:
+      consumes:
+      - application/json
+      description: placeholder
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Get all persons
+      tags:
+      - Person
+  /persons/:id:
+    get:
+      consumes:
+      - application/json
+      description: placeholder
+      parameters:
+      - description: Person Id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Get one person
+      tags:
+      - Person
+  /projects:
+    get:
+      consumes:
+      - application/json
+      description: placeholder
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Get all projects
+      tags:
+      - Project
+  /projects/:id:
+    get:
+      consumes:
+      - application/json
+      description: placeholder
+      parameters:
+      - description: Project Id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Get one project
+      tags:
+      - Project
+swagger: "2.0"

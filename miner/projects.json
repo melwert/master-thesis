@@ -1,0 +1,23 @@
+[
+    {
+        "name": "WPS",
+        "relevant_file_endings": [".md"],
+        "url": "url",
+        "private_url": "url",
+        "folder_depth": 1
+    },
+    {
+        "name": "SSH",
+        "relevant_file_endings": [".ps1", ".zsh", ".json", ".zshrc"],
+        "url": "url",
+        "private_url": "url",
+        "folder_depth": 1
+    },
+    {
+        "name": "SBS",
+        "relevant_file_endings": [".sh", ".service", ".timer"],
+        "url": "url",
+        "private_url": "url",
+        "folder_depth": 1
+    }
+]

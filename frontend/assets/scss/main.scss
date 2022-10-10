@@ -1,0 +1,132 @@
+// Import bulma styles
+@import "~bulma";
+
+// Import buefy styles
+@import "~buefy/src/scss/buefy";
+
+.projectcard {
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    border: 1px solid #f2f8f9;  
+
+    &:hover {
+        transition: all 0.5s ease-out;
+        box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+        top: -4px;
+        border: 1px solid #cccccc;
+        background-color: white;
+    }
+}
+
+.sidebar-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100%;
+    // min-height: 100vh;
+    .sidebar-layout {
+        display: flex;
+        flex-direction: row;
+        min-height: 100%;
+        // min-height: 100vh;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .b-sidebar {
+        .sidebar-content {
+            &.is-mini-mobile {
+                &:not(.is-mini-expand),
+                &.is-mini-expand:not(:hover):not(.is-mini-delayed) {
+                    .menu-list {
+                        li {
+                            a {
+                                span:nth-child(2) {
+                                    display: none;
+                                }
+                            }
+                            ul {
+                                padding-left: 0;
+                                li {
+                                    a {
+                                        display: inline-block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .menu-label:not(:last-child) {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .b-sidebar {
+        .sidebar-content {
+            &.is-mini {
+                &:not(.is-mini-expand),
+                &.is-mini-expand:not(:hover):not(.is-mini-delayed) {
+                    .menu-list {
+                        li {
+                            a {
+                                span:nth-child(2) {
+                                    display: none;
+                                }
+                            }
+                            ul {
+                                padding-left: 0;
+                                li {
+                                    a {
+                                        display: inline-block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .menu-label:not(:last-child) {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+.is-mini-expand {
+    .menu-list a {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.sidemenu-ruler {
+    background-color: $grey-lighter;
+}
+
+.b-sidebar .sidebar-content {
+    box-shadow: 0px 0px 15px $grey-light;
+}
+
+.menu-list a:hover {
+    background-color: $grey-lighter;
+    transition: all 0.5s ease-out;
+
+    &.is-active {
+        background-color: hsl(229, 55%, 38%);
+    }
+}
+
+.navbar {
+    background-color: #f2f8f9;
+    border-bottom-style: solid;
+    border-color: $grey-lighter;
+    border-width: 2px;
+    box-shadow: 0px 0px 20px hsl(0, 0%, 84%);;
+}
+
+.projectcard-vcs-link {
+    display: inline-block;
+}

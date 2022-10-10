@@ -1,0 +1,11 @@
+class Appsettings:
+    connection_string: str
+    working_dir: str
+    mine_jira: bool
+    mine_bitbucket: bool
+    jira_username: str
+    jira_password: str
+    jira_base_url: str
+    bitbucket_username: str
+    bitbucket_password: str
+    bitbucket_base_url: str
